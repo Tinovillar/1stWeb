@@ -1,0 +1,75 @@
+// -----------------------------------------------------------------------------------------
+
+
+.title__promociones {
+
+    h1 {
+    font-size: 4em;
+    display: flex;
+    width: 40%;
+    color: $growColor3;
+    margin: 2em auto;
+    }
+
+    .title__promociones__h1--amarillo {
+        color: $growColor1;
+    }
+}
+
+.promociones {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 3em 0;
+    padding: 0.5em 1em;
+    border: 0.2em solid $growColor3;
+    color: $growColor3;
+
+    .promociones__dias {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7em;
+        margin: 1em 0 0.5em;
+        border: none;
+        transition: background-color 0.5s;
+
+
+        .promociones__dias__h2--amarillo {
+            color: $growColor1;
+        }
+
+        .promociones__dias__promo {
+            text-align: center;
+            transition: font-size 0.4s;
+            width: 50%;
+            display: none;
+            transition: display 2s;
+        }
+    }
+
+    .promociones__dias:hover {
+        background-color: $growColor1;
+        border: .1em solid $growColor3;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 2em;
+            color: $growColor2;
+        }
+
+        .promociones__dias__promo {
+            display: block;
+            font-size: 1.4em;
+            margin-top: 1em;
+        }
+
+        .promociones__dias__h2--amarillo {
+            color: $growColor3;
+        }
+    }
+}
+
+
+
+// -----------------------------------------------------------------------------------------

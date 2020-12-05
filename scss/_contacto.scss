@@ -1,0 +1,83 @@
+// -----------------------------------------------------------------------------------------
+
+.contactoTitle {
+    align-items: center;
+    font-size: 2.3em;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0;
+    color: $growColor3;
+
+    h1 {
+        color: $growColor1; 
+    }
+
+    .contactoTitle__iconos {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-top: 2em;
+    
+        .whatsapp {
+            background-color: #4AA81F;
+            padding: 0.2em;
+            color: $growColor3;
+            transition: color 0.5s, background-color 0.5s;
+        }
+
+        .whatsapp:hover {
+            background-color: white;
+            color: #4AA81F;
+        }
+    
+        .instagram {
+            background-color: #9C349B;
+            padding: 0.2em;
+            color: $growColor3;
+            transition: color 0.5s, background-color 0.5s;
+        }
+
+        .instagram:hover {
+            background-color: white;
+            color: #9C349B;            
+        }
+    }
+}
+
+.ubicacionRedes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2em;
+    border: 0.1em $growColor1 solid;
+    padding: 0.8em;
+    align-items: center;
+    justify-items: center;
+
+    .ubicacionRedes__contactoRedes {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 70%;
+        width: auto;
+        align-items: center;
+        color: $growColor3;
+    
+        h3 {
+            font-size: 3em;
+
+            .ubicacionRedes__contactoRedes__h3__i--amarillo {
+                color: $growColor1;
+            }
+        }
+    
+        p {
+            font-size: 1.2em;
+        }
+    }
+}
+
+
+
+
+// -----------------------------------------------------------------------------------------
