@@ -45,7 +45,7 @@
     }
 }
 
-.ubicacionRedes {
+.ubicacion {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2em;
@@ -54,7 +54,7 @@
     align-items: center;
     justify-items: center;
 
-    .ubicacionRedes__contactoRedes {
+    .ubicacion__direccion {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -66,7 +66,7 @@
         h3 {
             font-size: 3em;
 
-            .ubicacionRedes__contactoRedes__h3__i--amarillo {
+            .ubicacion__direccion__h3__i--amarillo {
                 color: $growColor1;
             }
         }
