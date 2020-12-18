@@ -345,61 +345,79 @@ img {
   border: 0.15em solid #FFFFFF;
 }
 
+.title__promociones .title__promociones-responsive {
+  display: none;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .title__promociones .title__promociones-responsive {
+    display: block;
+  }
+}
 .title__promociones h1 {
   font-size: 4em;
-  display: flex;
-  width: 40%;
   color: #FFFFFF;
+  text-align: center;
   margin: 2em auto;
+}
+@media (max-width: 768px) {
+  .title__promociones h1 {
+    display: none;
+  }
 }
 .title__promociones .title__promociones__h1--amarillo {
   color: #CD9524;
 }
 
 .promociones {
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 3em 0;
-  padding: 0.5em 1em;
-  border: 0.2em solid #FFFFFF;
-  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5em;
+  column-gap: 5em;
+  margin: 5em 0;
+}
+@media (max-width: 1024px) {
+  .promociones {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .promociones {
+    grid-template-columns: 1fr;
+  }
 }
 .promociones .promociones__dias {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.7em;
-  margin: 1em 0 0.5em;
-  border: none;
-  transition: background-color 0.5s;
+  color: #FFFFFF;
+  padding: 0.4em;
+  text-align: center;
+  border: 0.15em solid #CD9524;
+}
+.promociones .promociones__dias h2 {
+  margin-bottom: 1.5em;
+  font-size: 2.5em;
+}
+@media (max-width: 1024px) {
+  .promociones .promociones__dias h2 {
+    margin-bottom: 1em;
+  }
 }
 .promociones .promociones__dias .promociones__dias__h2--amarillo {
   color: #CD9524;
 }
-.promociones .promociones__dias .promociones__dias__promo {
-  text-align: center;
-  transition: font-size 0.4s;
-  width: 50%;
-  display: none;
-  transition: display 2s;
-}
-.promociones .promociones__dias:hover {
+.promociones .promociones__dias .promociones__dias__promo h3 {
+  font-size: 1.3em;
+  border: 0.05em solid #FFFFFF;
+  padding: 0.5em;
   background-color: #CD9524;
-  border: 0.1em solid #FFFFFF;
-  display: flex;
-  flex-direction: column;
-}
-.promociones .promociones__dias:hover h2 {
-  font-size: 2em;
   color: #222224;
 }
-.promociones .promociones__dias:hover .promociones__dias__promo {
-  display: block;
-  font-size: 1.4em;
-  margin-top: 1em;
+@media (max-width: 768px) {
+  .promociones .promociones__dias .promociones__dias__promo h3 {
+    margin-bottom: 0.5em;
+  }
 }
-.promociones .promociones__dias:hover .promociones__dias__h2--amarillo {
-  color: #FFFFFF;
+.promociones .promociones__dias .promociones__dias__promo p {
+  margin-top: 1em;
 }
 
 .contactoTitle {

@@ -3,12 +3,24 @@
 
 .title__promociones {
 
+    .title__promociones-responsive {
+        display: none;
+        text-align: center;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+
     h1 {
     font-size: 4em;
-    display: flex;
-    width: 40%;
     color: $growColor3;
+    text-align: center;
     margin: 2em auto;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 
     .title__promociones__h1--amarillo {
@@ -17,58 +29,62 @@
 }
 
 .promociones {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 3em 0;
-    padding: 0.5em 1em;
-    border: 0.2em solid $growColor3;
-    color: $growColor3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 5em;
+    column-gap: 5em;
+    margin: 5em 0;
 
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; 
+    }
+    
     .promociones__dias {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0.7em;
-        margin: 1em 0 0.5em;
-        border: none;
-        transition: background-color 0.5s;
+        color: $growColor3;
+        padding: 0.4em;
+        text-align: center;
+        border: 0.15em solid $growColor1;
 
+        h2 {
+            margin-bottom: 1.5em;
+            font-size: 2.5em;
+
+            @media (max-width: 1024px) {
+                margin-bottom: 1em;
+            }
+        }
 
         .promociones__dias__h2--amarillo {
             color: $growColor1;
         }
 
         .promociones__dias__promo {
-            text-align: center;
-            transition: font-size 0.4s;
-            width: 50%;
-            display: none;
-            transition: display 2s;
-        }
-    }
+            h3 {
+                font-size: 1.3em;
+                border: 0.05em solid $growColor3;
+                padding: 0.5em;
+                background-color: $growColor1;
+                color: $growColor2;
 
-    .promociones__dias:hover {
-        background-color: $growColor1;
-        border: .1em solid $growColor3;
-        display: flex;
-        flex-direction: column;
+                @media (max-width: 768px) {
+                    margin-bottom: 0.5em;
+                }
+            }
 
-        h2 {
-            font-size: 2em;
-            color: $growColor2;
-        }
-
-        .promociones__dias__promo {
-            display: block;
-            font-size: 1.4em;
-            margin-top: 1em;
-        }
-
-        .promociones__dias__h2--amarillo {
-            color: $growColor3;
+            p {
+                margin-top: 1em;
+            }
         }
     }
 }
+
+
+
+
 
 
 
