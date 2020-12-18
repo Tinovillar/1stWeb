@@ -177,22 +177,29 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-top: 10vh;
-  margin-bottom: 20vh;
-  height: 20vh;
-  padding-bottom: 20vh;
-  border-bottom: 0.1vh solid #CD9524;
+  margin: 4em 0 5em;
 }
 .menu h1 {
   color: #CD9524;
-  font-size: 4em;
-  letter-spacing: 0.8vh;
-  margin-bottom: 5vh;
+  font-size: 4.5em;
+  letter-spacing: 0.2em;
+  margin-bottom: 1em;
 }
 .menu .menu__ul {
   display: flex;
   justify-content: space-between;
-  width: 40%;
+  width: 70%;
+}
+@media (max-width: 768px) {
+  .menu .menu__ul {
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+}
+.menu .menu__ul__li {
+  margin: 0.5em;
+  border-bottom: 0.1em solid #CD9524;
 }
 .menu .menu__ul__li a {
   color: #FFFFFF;
@@ -205,21 +212,39 @@ img {
   background-color: #CD9524;
   color: #222224;
   padding: 0.2em;
-  margin-top: 2em;
+}
+@media (max-width: 1024px) {
+  .titleSection h2 {
+    font-size: 2.4em;
+  }
 }
 .titleSection .burgers__section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 5em;
+  margin: 3em 0;
   row-gap: 2em;
-  column-gap: 2.5em;
+  column-gap: 3em;
+}
+@media (max-width: 1024px) {
+  .titleSection .burgers__section {
+    grid-template-columns: 1fr;
+    margin: 1em;
+    row-gap: 1em;
+  }
 }
 .titleSection .vegetariano__section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 3em;
-  row-gap: 3em;
+  margin: 3em 0;
+  row-gap: 2em;
   column-gap: 3em;
+}
+@media (max-width: 1024px) {
+  .titleSection .vegetariano__section {
+    grid-template-columns: 1fr;
+    margin: 1em;
+    row-gap: 1em;
+  }
 }
 .titleSection .vegetariano__section .comingSoon {
   font-size: 1.8em;
@@ -228,10 +253,26 @@ img {
 .titleSection .tapeos__section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   margin: 3em 0;
-  row-gap: 1em;
+  row-gap: 3em;
   column-gap: 1em;
+}
+@media (max-width: 1024px) {
+  .titleSection .tapeos__section {
+    grid-template-columns: 1fr;
+    margin: 1em;
+    row-gap: 1em;
+  }
+}
+.titleSection .tapeos__section .h3--color-white {
+  color: #FFFFFF;
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+@media (max-width: 1024px) {
+  .titleSection .tapeos__section .h3--color-white {
+    font-size: 1.4em;
+  }
 }
 .titleSection .menu__article {
   display: flex;
@@ -241,6 +282,12 @@ img {
 }
 .titleSection .menu__article .menu__article__img img {
   border-radius: 50%;
+}
+@media (max-width: 768px) {
+  .titleSection .menu__article .menu__article__img img {
+    width: 150px;
+    height: 150px;
+  }
 }
 .titleSection .menu__article .menu__article__text {
   width: 50%;
@@ -254,14 +301,30 @@ img {
   color: #CD9524;
   font-size: 2em;
 }
+@media (max-width: 1024px) {
+  .titleSection .menu__article .menu__article__text .h3--color {
+    font-size: 1.7em;
+  }
+}
 .titleSection .menu__article .menu__article__text p {
-  margin: 1em 0;
+  margin: 0.5em 0;
+}
+@media (max-width: 768px) {
+  .titleSection .menu__article .menu__article__text p {
+    font-size: 0.8em;
+  }
 }
 .titleSection .menu__article .menu__article__text .precio--colores {
-  border: 0.03em solid #CD9524;
+  background-color: #CD9524;
   padding: 0.2em;
-  color: #FFFFFF;
+  color: #222224;
   font-size: 1.2em;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .titleSection .menu__article .menu__article__text .precio--colores {
+    font-size: 1.3em;
+  }
 }
 
 .top a {

@@ -5,26 +5,30 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10vh;
-    margin-bottom: 20vh;
-    height: 20vh;
-    padding-bottom: 20vh;
-    border-bottom: 0.1vh solid $growColor1;
+    margin: 4em 0 5em;
 
     h1 {
         color: $growColor1;
-        font-size: 4em;
-        letter-spacing: 0.8vh;
-        margin-bottom: 5vh;
+        font-size: 4.5em;
+        letter-spacing: 0.2em;
+        margin-bottom: 1em;
     }
 
     .menu__ul {
         display: flex;
         justify-content: space-between;
-        width: 40%;
+        width: 70%;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+        }
     }
     
     .menu__ul__li{
+        margin: 0.5em;
+        border-bottom: 0.1em solid $growColor1;
 
         a {
         color: $growColor3;
@@ -41,22 +45,37 @@
     background-color: $growColor1;
     color: $growColor2;
     padding: 0.2em;
-    margin-top: 2em;
+
+    @media (max-width: 1024px) {
+        font-size: 2.4em;
+    }
     }
     
     .burgers__section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: 5em;
+        margin: 3em 0;
         row-gap: 2em;
-        column-gap: 2.5em;
+        column-gap: 3em;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            margin: 1em;
+            row-gap: 1em;
+        }
     }
     .vegetariano__section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin-top: 3em;
-        row-gap: 3em;
+        margin: 3em 0;
+        row-gap: 2em;
         column-gap: 3em;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            margin: 1em;
+            row-gap: 1em;
+        }
         
         .comingSoon {
             font-size: 1.8em;
@@ -67,10 +86,25 @@
     .tapeos__section {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
         margin: 3em 0;
-        row-gap: 1em;
+        row-gap: 3em;
         column-gap: 1em;
+
+        @media (max-width: 1024px) {
+            grid-template-columns: 1fr;
+            margin: 1em;
+            row-gap: 1em;
+        }
+
+        .h3--color-white {
+            color: $growColor3;
+            font-size: 1.8em;
+            margin-bottom: 1em;
+
+            @media (max-width: 1024px) {
+                font-size: 1.4em;
+            }
+        }
     }
 
     .menu__article {
@@ -79,8 +113,15 @@
         align-items: center;
         color: $growColor3;
         
-        .menu__article__img img{
-            border-radius: 50%;
+        .menu__article__img {
+            img{
+                border-radius: 50%;
+                
+                @media (max-width: 768px) {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
         }
         
         .menu__article__text {
@@ -94,17 +135,30 @@
             .h3--color {
                 color: $growColor1;
                 font-size: 2em;
+
+                @media (max-width: 1024px) {
+                    font-size: 1.7em;
+                }
             }
     
             p {
-                margin: 1em 0;
+                margin: 0.5em 0;
+
+                @media (max-width: 768px) {
+                    font-size: 0.8em;
+                }
             }
             
             .precio--colores {
-                border: 0.03em solid $growColor1;
+                background-color: $growColor1;
                 padding: 0.2em;
-                color: $growColor3;
+                color: $growColor2;
                 font-size: 1.2em;
+                font-weight: bold;
+
+                @media (max-width: 768px) {
+                    font-size: 1.3em;
+                }
             }
         }
     }
@@ -133,3 +187,7 @@
 } 
 
 // -----------------------------------------------------------------------------------------
+
+@media (max-width: 1024px) {
+    
+}
