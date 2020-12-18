@@ -567,7 +567,7 @@ footer .footer .footer__nav .footer__nav__ul .footer__nav__ul__li a:hover {
   border-bottom: 1.5px solid #222224;
   transition: background-color 0.4s;
 }
-footer .footer .footer__nav .footer__nav__ul .footer__nav__ul__li__active a {
+footer .footer .footer__nav .footer__nav__ul .footer__active a {
   background-color: rgba(34, 34, 36, 0.2);
   border-bottom: 1.5px solid #222224;
 }
