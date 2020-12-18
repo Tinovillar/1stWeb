@@ -363,6 +363,7 @@ img {
 @media (max-width: 768px) {
   .title__promociones h1 {
     display: none;
+    margin: 1em auto;
   }
 }
 .title__promociones .title__promociones__h1--amarillo {
