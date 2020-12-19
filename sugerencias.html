@@ -50,63 +50,62 @@
         <p class="sugerencias__subtitle">Dejanos tu sugerencia aqui</p>
         <a href="#section"><i class="fas fa-chevron-down sugerencias__icon"></i></a>
     </main>
-    <div class="sugerenciasForms contenedor" id="section">
-        <div class="sugerenciasForms__forms">
+    <div class="contenedor">    
+        <div class="contacto">
+            <div class="contacto__form">
+                <h3>Dejanos tu sugerencia!</h3>
                 <form action="">
-
-                    <div class="sugerenciasForms__formDatos__label-input">
-                        <label for="NyA">Tu Nombre y Apellido</label>
-                        <input type="text" name="NyA" id="" placeholder="Nombre y apellido">
+                    <div>
+                        <label>Nombre <span class="required--rojo">(requerido)</span></label>
+                        <input type="text" name="nombre" required>
                     </div>
-
-                    <div class="sugerenciasForms__formDatos__label-input">
-                        <label for="email">Dejanos tu email</label>
-                        <input type="email" name="email" id="" placeholder="Email">
+                    <div>
+                        <label>Email <span class="required--rojo">(requerido)</span></label>
+                        <input type="email" name="email" required>
                     </div>
-
-                    <div class="sugerenciasForms__formDatos__notificaciones">
-                        <input type="checkbox" name="notficiaciones" id="">
-                        <label for="notficiaciones">Quiero recibir novedades</label>
+                    <div>
+                        <label>Celular</label>
+                        <input type="tel" name="celular">
                     </div>
-                    
-                    <label for="sugerencia">Seleccione sobre que quiere hacer una sugerencia</label>
-                    <select name="sugerencia" id="">
-                        <option selected value="">Seleccione una opcion...</option>
-                        <option value="1">Hamburgesas</option>
-                        <option value="2">Tapeos</option>
-                        <option value="3">Cervezas</option>
-                        <option value="4">Local</option>
-                        <option value="5">Personal</option>
-                        <option value="6">Otro</option>
-                    </select>
-                    
-                    <textarea name="" id="" maxlength="500" cols="60" rows="15" placeholder="Escribe tu sugerencia..."></textarea>
-                    <div class="btn">
-                        <input type="submit" name="" id="">
+                    <div>
+                        <label>Asunto <span class="required--rojo">(requerido)</span></label>
+                        <input type="text" name="asunto" required>
+                    </div>
+                    <div class="block">
+                        <label>Sugerencia <span class="required--rojo">(requerido)</span></label> 
+                        <textarea name="message" rows="3" required></textarea>
+                    </div>
+                    <div class="block">
+                        <button>
+                            Send
+                        </button>
                     </div>
                 </form>
+            </div>
+        </div>
+
     </div>
+    <div class="contenedor">    
+        <div class="contacto">
+            <div class="contacto__form">
+                <h3>Sugerencia Anonima</h3>
+                <form action="">
+                    <div>
+                        <label>Asunto <span class="required--rojo">(requerido)</span></label>
+                        <input type="text" name="asunto" required>
+                    </div>
+                    <div class="contacto__block">
+                        <label>Sugerencia <span class="required--rojo">(requerido)</span></label> 
+                        <textarea name="message" rows="3" required></textarea>
+                    </div>
+                    <div class="contacto__block">
+                        <button>Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
 
-    <div class="sugerenciasForms__forms">
-        <form action="">
-            <h2 class="formAnonimo__title">Sugerencia Anonima</h2>
-            <label for="sugerencia">Seleccione sobre que quiere hacer una sugerencia</label>
-            <select name="sugerencia" id="">
-                <option selected value="">Seleccione una opcion...</option>
-                <option value="1">Hamburgesas</option>
-                <option value="2">Tapeos</option>
-                <option value="3">Cervezas</option>
-                <option value="4">Local</option>
-                <option value="5">Personal</option>
-                <option value="6">Otro</option>
-            </select>
-
-            <textarea name="" id="" maxlength="500" cols="60" rows="15" placeholder="Escribe tu sugerencia..."></textarea>
-
-            <input type="submit" name="" id="">
-        </form>
     </div>
-</div>
     <!-- Footer -->
 
     <footer>
