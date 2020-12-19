@@ -67,7 +67,7 @@
     grid-template-areas: 
     "a b";
     align-items: center;
-    width: auto;
+    width: 90%;
     margin: 0 auto 4em;
     padding: 0.5em;
     border: 0.1em solid $growColor1;
@@ -84,6 +84,10 @@
     
     .ubicacion__iframe--m {
         grid-area: a;
+
+        @media (max-width: 1024px) {
+            margin: 0 auto 1.3em;
+        }
 
         @media (max-width: 768px) {
             display: none;

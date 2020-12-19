@@ -510,7 +510,7 @@ img {
   display: grid;
   grid-template-areas: "a b";
   align-items: center;
-  width: auto;
+  width: 90%;
   margin: 0 auto 4em;
   padding: 0.5em;
   border: 0.1em solid #CD9524;
@@ -527,6 +527,11 @@ img {
 }
 .ubicacion .ubicacion__iframe--m {
   grid-area: a;
+}
+@media (max-width: 1024px) {
+  .ubicacion .ubicacion__iframe--m {
+    margin: 0 auto 1.3em;
+  }
 }
 @media (max-width: 768px) {
   .ubicacion .ubicacion__iframe--m {
