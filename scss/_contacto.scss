@@ -1,81 +1,129 @@
 // -----------------------------------------------------------------------------------------
 
 .contactoTitle {
-    align-items: center;
-    font-size: 2.3em;
-    display: flex;
-    flex-direction: column;
-    margin: 2em 0;
-    color: $growColor3;
+    font-size: 2em;
+    text-align: center;
+    margin: 3em 0;
+
+    @media (max-width: 768px) {
+        margin: 1em 0;
+    }
 
     h1 {
-        color: $growColor1; 
+        color: #cd9524;
+    }
+
+    p {
+        margin: 1.2em 0;
+        font-size: 0.8em;
+        color: $growColor3;
     }
 
     .contactoTitle__iconos {
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
         width: 100%;
-        margin-top: 2em;
-    
-        .whatsapp {
-            background-color: #4AA81F;
-            padding: 0.2em;
-            color: $growColor3;
-            transition: color 0.5s, background-color 0.5s;
+        justify-content: space-around;
+
+        .contacto__ig {
+            color: #c13584;
+
+            @media (max-width: 768px) {
+                font-size: 0.8em;
+            }
+        }
+        
+        .contacto__wp {
+            color: #00bb2d;
+
+            @media (max-width: 768px) {
+                font-size: 0.8em;
+            }
         }
 
-        .whatsapp:hover {
-            background-color: white;
-            color: #4AA81F;
-        }
-    
-        .instagram {
-            background-color: #9C349B;
+        a {
             padding: 0.2em;
-            color: $growColor3;
-            transition: color 0.5s, background-color 0.5s;
+            border-radius: 1%;
+
+            .fa-whatsapp {
+                color: $growColor3;
+                background-color: #00bb2d;
+            }
+            
+            .fa-instagram {
+                color: $growColor3;
+                background: -webkit-linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+            }
         }
 
-        .instagram:hover {
-            background-color: white;
-            color: #9C349B;            
+        i {
+            padding: 0.25em;
+            border-radius: 50%;
         }
     }
 }
 
 .ubicacion {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 2em;
-    border: 0.1em $growColor1 solid;
-    padding: 0.8em;
+    grid-template-areas: 
+    "a b";
     align-items: center;
-    justify-items: center;
+    width: auto;
+    margin: 0 auto 4em;
+    padding: 0.5em;
+    border: 0.1em solid $growColor1;
+
+    .ubicacion__iframe--s {
+        display: none;
+        grid-area: a;
+
+        @media (max-width: 768px) {
+            display: block;
+            margin: 0 auto 1.3em;
+        }
+    }
+    
+    .ubicacion__iframe--m {
+        grid-area: a;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
 
     .ubicacion__direccion {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 70%;
-        width: auto;
-        align-items: center;
-        color: $growColor3;
-    
-        h3 {
-            font-size: 3em;
+        text-align: center;
+        font-size: 1.5em;
+        grid-area: b;
 
-            .ubicacion__direccion__h3__i--amarillo {
-                color: $growColor1;
-            }
-        }
-    
         p {
-            font-size: 1.2em;
+            margin: 2em 0;
+            color: $growColor3;
+        }
+
+        h3 {
+            color: $growColor3;
+        }
+
+        .ubicacion__direccion__h3__i--amarillo {
+            color: $growColor1;
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .contenedor-ubicacion {
+        width: auto;
+    }
+
+    .ubicacion {
+        grid-template-areas:
+        "a"
+        "b";
+        width: 98%;
+    }
+}
+
+
 
 
 

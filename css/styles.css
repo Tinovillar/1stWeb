@@ -28,6 +28,12 @@ html {
   margin: auto;
 }
 
+.contenedor-ubicacion {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
 .nav {
   border-bottom: 0.1em solid #CD9524;
 }
@@ -444,72 +450,115 @@ img {
 }
 
 .contactoTitle {
-  align-items: center;
-  font-size: 2.3em;
-  display: flex;
-  flex-direction: column;
-  margin: 2em 0;
-  color: #FFFFFF;
+  font-size: 2em;
+  text-align: center;
+  margin: 3em 0;
+}
+@media (max-width: 768px) {
+  .contactoTitle {
+    margin: 1em 0;
+  }
 }
 .contactoTitle h1 {
-  color: #CD9524;
+  color: #cd9524;
+}
+.contactoTitle p {
+  margin: 1.2em 0;
+  font-size: 0.8em;
+  color: #FFFFFF;
 }
 .contactoTitle .contactoTitle__iconos {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   width: 100%;
-  margin-top: 2em;
+  justify-content: space-around;
 }
-.contactoTitle .contactoTitle__iconos .whatsapp {
-  background-color: #4AA81F;
+.contactoTitle .contactoTitle__iconos .contacto__ig {
+  color: #c13584;
+}
+@media (max-width: 768px) {
+  .contactoTitle .contactoTitle__iconos .contacto__ig {
+    font-size: 0.8em;
+  }
+}
+.contactoTitle .contactoTitle__iconos .contacto__wp {
+  color: #00bb2d;
+}
+@media (max-width: 768px) {
+  .contactoTitle .contactoTitle__iconos .contacto__wp {
+    font-size: 0.8em;
+  }
+}
+.contactoTitle .contactoTitle__iconos a {
   padding: 0.2em;
+  border-radius: 1%;
+}
+.contactoTitle .contactoTitle__iconos a .fa-whatsapp {
   color: #FFFFFF;
-  transition: color 0.5s, background-color 0.5s;
+  background-color: #00bb2d;
 }
-.contactoTitle .contactoTitle__iconos .whatsapp:hover {
-  background-color: white;
-  color: #4AA81F;
-}
-.contactoTitle .contactoTitle__iconos .instagram {
-  background-color: #9C349B;
-  padding: 0.2em;
+.contactoTitle .contactoTitle__iconos a .fa-instagram {
   color: #FFFFFF;
-  transition: color 0.5s, background-color 0.5s;
+  background: -webkit-linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
 }
-.contactoTitle .contactoTitle__iconos .instagram:hover {
-  background-color: white;
-  color: #9C349B;
+.contactoTitle .contactoTitle__iconos i {
+  padding: 0.25em;
+  border-radius: 50%;
 }
 
 .ubicacion {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 2em;
-  border: 0.1em #CD9524 solid;
-  padding: 0.8em;
+  grid-template-areas: "a b";
   align-items: center;
-  justify-items: center;
+  width: auto;
+  margin: 0 auto 4em;
+  padding: 0.5em;
+  border: 0.1em solid #CD9524;
+}
+.ubicacion .ubicacion__iframe--s {
+  display: none;
+  grid-area: a;
+}
+@media (max-width: 768px) {
+  .ubicacion .ubicacion__iframe--s {
+    display: block;
+    margin: 0 auto 1.3em;
+  }
+}
+.ubicacion .ubicacion__iframe--m {
+  grid-area: a;
+}
+@media (max-width: 768px) {
+  .ubicacion .ubicacion__iframe--m {
+    display: none;
+  }
 }
 .ubicacion .ubicacion__direccion {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 70%;
-  width: auto;
-  align-items: center;
+  text-align: center;
+  font-size: 1.5em;
+  grid-area: b;
+}
+.ubicacion .ubicacion__direccion p {
+  margin: 2em 0;
   color: #FFFFFF;
 }
 .ubicacion .ubicacion__direccion h3 {
-  font-size: 3em;
+  color: #FFFFFF;
 }
-.ubicacion .ubicacion__direccion h3 .ubicacion__direccion__h3__i--amarillo {
+.ubicacion .ubicacion__direccion .ubicacion__direccion__h3__i--amarillo {
   color: #CD9524;
 }
-.ubicacion .ubicacion__direccion p {
-  font-size: 1.2em;
-}
 
+@media (max-width: 1024px) {
+  .contenedor-ubicacion {
+    width: auto;
+  }
+
+  .ubicacion {
+    grid-template-areas: "a" "b";
+    width: 98%;
+  }
+}
 .sugerencias {
   display: flex;
   flex-direction: column;
