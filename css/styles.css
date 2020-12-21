@@ -688,9 +688,6 @@ footer .footer img {
   border-radius: 50%;
   transition: border 0.1s;
 }
-footer .footer img:hover {
-  border: 0.13em solid #FFFFFF;
-}
 footer .footer .footer__nav {
   margin-top: 1em;
 }
