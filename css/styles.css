@@ -218,6 +218,7 @@ img {
   background-color: #CD9524;
   color: #222224;
   padding: 0.2em;
+  text-align: center;
 }
 @media (max-width: 1024px) {
   .titleSection h2 {
@@ -373,29 +374,33 @@ img {
   border: 0.15em solid #FFFFFF;
 }
 
+.title__promociones {
+  margin: 8em 0;
+}
+.title__promociones h1 {
+  font-size: 4em;
+  color: #FFFFFF;
+  text-align: center;
+}
 .title__promociones .title__promociones-responsive {
   display: none;
-  text-align: center;
 }
 @media (max-width: 768px) {
   .title__promociones .title__promociones-responsive {
     display: block;
   }
 }
-.title__promociones h1 {
-  font-size: 4em;
-  color: #FFFFFF;
-  text-align: center;
-  margin: 2em auto;
-}
 @media (max-width: 768px) {
-  .title__promociones h1 {
+  .title__promociones .title__promociones-original {
     display: none;
-    margin: 1em auto;
   }
 }
 .title__promociones .title__promociones__h1--amarillo {
   color: #CD9524;
+}
+.title__promociones .title__promociones__p {
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .promociones {
@@ -509,11 +514,18 @@ img {
 .ubicacion {
   display: grid;
   grid-template-areas: "a b";
+  grid-template-columns: 1fr 1fr;
   align-items: center;
+  align-self: center;
   width: 90%;
   margin: 0 auto 4em;
-  padding: 0.5em;
+  padding: 0.8em;
   border: 0.1em solid #CD9524;
+}
+@media (max-width: 1024px) {
+  .ubicacion {
+    grid-template-columns: none;
+  }
 }
 .ubicacion .ubicacion__iframe--s {
   display: none;
@@ -523,6 +535,13 @@ img {
   .ubicacion .ubicacion__iframe--s {
     display: block;
     margin: 0 auto 1.3em;
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 440px) {
+  .ubicacion .ubicacion__iframe--s {
+    width: 100%;
   }
 }
 .ubicacion .ubicacion__iframe--m {
@@ -699,23 +718,20 @@ footer .footer .footer__autor {
   width: 100%;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+footer .footer .footer__autor .footer__autor__by {
+  color: firebrick;
+  margin-top: 0.5em;
 }
 footer .footer .footer__autor .footer__autor__derechos--copy {
   font-weight: bold;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 @media (max-width: 768px) {
   .footer__nav {
     display: none;
-  }
-
-  .footer__autor {
-    flex-direction: column;
-  }
-  .footer__autor .footer__autor__by {
-    margin-top: 0.5em;
-    color: #FFFFFF;
   }
 }

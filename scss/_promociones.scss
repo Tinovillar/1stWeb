@@ -2,30 +2,36 @@
 
 
 .title__promociones {
+    margin: 8em 0;
+    
+    h1 {
+    font-size: 4em;
+    color: $growColor3;
+    text-align: center;
+    }
 
     .title__promociones-responsive {
         display: none;
-        text-align: center;
 
         @media (max-width: 768px) {
             display: block;
         }
     }
 
-    h1 {
-    font-size: 4em;
-    color: $growColor3;
-    text-align: center;
-    margin: 2em auto;
+    .title__promociones-original {
 
         @media (max-width: 768px) {
             display: none;
-            margin: 1em auto;
         }
     }
 
     .title__promociones__h1--amarillo {
         color: $growColor1;
+    }
+
+    .title__promociones__p {
+        text-align: center;
+        color: $growColor3;
     }
 }
 

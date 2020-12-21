@@ -66,19 +66,31 @@
     display: grid;
     grid-template-areas: 
     "a b";
+    grid-template-columns: 1fr 1fr;
     align-items: center;
+    align-self: center;
     width: 90%;
     margin: 0 auto 4em;
-    padding: 0.5em;
+    padding: 0.8em;
     border: 0.1em solid $growColor1;
+
+    @media (max-width: 1024px) {
+        grid-template-columns: none;
+    }
 
     .ubicacion__iframe--s {
         display: none;
         grid-area: a;
-
+        
         @media (max-width: 768px) {
             display: block;
             margin: 0 auto 1.3em;
+            width: 400px;
+            height: 300px;
+        }
+        
+        @media (max-width: 440px) {
+            width: 100%;
         }
     }
     

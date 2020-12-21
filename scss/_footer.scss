@@ -60,11 +60,17 @@ footer {
             width: 100%;
             text-align: center;
             display: flex;
+            flex-direction: column;
             justify-content: space-between;
+
+            .footer__autor__by {
+                color: firebrick;
+                margin-top: 0.5em;
+            }
 
             .footer__autor__derechos--copy {
                 font-weight: bold;
-                font-size: 1.1em;
+                font-size: 1.2em;
             }
         }
     }
@@ -73,14 +79,5 @@ footer {
 @media (max-width: 768px) {
     .footer__nav {
         display: none;
-    }
-
-    .footer__autor {
-        flex-direction: column;
-
-        .footer__autor__by {
-            margin-top: 0.5em;
-            color: $growColor3;
-        }
     }
 }
