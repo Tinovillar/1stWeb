@@ -222,7 +222,7 @@ img {
 }
 @media (max-width: 1024px) {
   .titleSection h2 {
-    font-size: 2.4em;
+    font-size: 2.3em;
   }
 }
 .titleSection .burgers__section {
@@ -455,7 +455,7 @@ img {
 }
 
 .contactoTitle {
-  font-size: 2em;
+  font-size: 1.9em;
   text-align: center;
   margin: 3em 0;
 }
@@ -469,7 +469,7 @@ img {
 }
 .contactoTitle p {
   margin: 1.2em 0;
-  font-size: 0.8em;
+  font-size: 0.7em;
   color: #FFFFFF;
 }
 .contactoTitle .contactoTitle__iconos {
@@ -595,15 +595,19 @@ img {
   width: 70%;
   color: #CD9524;
 }
+@media (max-width: 768px) {
+  .sugerencias .sugerencias__title {
+    font-size: 3.5em;
+  }
+}
 .sugerencias .sugerencias__subtitle {
   font-size: 1.5em;
-  margin-top: 3em;
+  margin: 3em 0;
   padding: 0.5em;
   color: #FFFFFF;
 }
 .sugerencias .sugerencias__icon {
   font-size: 2.5em;
-  margin-top: 4em;
   color: #CD9524;
 }
 

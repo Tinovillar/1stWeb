@@ -10,18 +10,21 @@
         font-size: 4em;
         width: 70%;
         color: $growColor1;
+
+        @media (max-width: 768px) {
+            font-size: 3.5em;
+        }
     }
     
     .sugerencias__subtitle {
         font-size: 1.5em;
-        margin-top: 3em;
+        margin: 3em 0;
         padding: 0.5em;
         color: $growColor3;
     }
 
     .sugerencias__icon {
         font-size: 2.5em;
-        margin-top: 4em;
         color: $growColor1; 
     }
 }
