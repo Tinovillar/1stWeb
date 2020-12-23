@@ -50,26 +50,25 @@ html {
   align-items: center;
   padding: 0.5em 0;
 }
-
-img {
-  border-radius: 50%;
-}
-
-.nav-web__ul {
+.nav-web .nav-web__ul {
   display: flex;
   width: 50%;
   justify-content: space-between;
 }
-.nav-web__ul .nav-web__ul__li a {
+.nav-web .nav-web__ul .nav-web__ul__li a {
   color: #FFFFFF;
   font-size: 1.2em;
   padding: 0.35em;
   transition: background-color 0.5s;
 }
-.nav-web__ul .nav-web__ul__li a:hover {
+.nav-web .nav-web__ul .nav-web__ul__li a:hover {
   background-color: rgba(205, 149, 36, 0.2);
   border-bottom: 1.5px solid #CD9524;
   transition: background-color 0.8s;
+}
+
+img {
+  border-radius: 50%;
 }
 
 .nav-mobile {
@@ -112,16 +111,8 @@ img {
     padding: 0.5em 0;
   }
 
-  .nav-mobile__menu:hover .nav-mobile__menu__ul {
-    left: 0;
-  }
-
-  .close {
-    display: block;
-  }
-
   .nav-mobile__menu__ul {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100vh;
     background-color: #222224;
@@ -132,6 +123,14 @@ img {
     text-align: center;
     transition: all 0.5s;
     justify-content: space-around;
+  }
+
+  .nav-mobile__menu:hover .nav-mobile__menu__ul {
+    left: 0;
+  }
+
+  .close {
+    display: block;
   }
 }
 .inicio {

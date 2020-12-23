@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Grow Burger Shop | Bar ideal para disfrutar con amigos, compartiendo cervezas y buenos momentos">
-    <meta name="keywords" content="hamburgesas, burgers, birra, cerveza, hamburgueseria, cerveceria, bar">
+    <meta name="keywords" content="hamburgesas burgers birra cerveza hamburgueseria cerveceria bar">
     <title>Inicio | Grow Burger Shop</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="img/Grow.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script>
+        new WOW().init();
+    </script>
 </head>
 <body>
 
@@ -15,7 +19,7 @@
 
     <header>
         <div class="contenedor">
-            <nav class="nav">
+            <nav class="nav wow animate__animated animate__fadeIn">
                 <div class="nav-web">
                 <a href="index.html"><img src="img/Grow.jpg" alt="Grow Icon"></a>
                     <ul class="nav-web__ul">
@@ -50,12 +54,12 @@
     <main>
         <div class="contenedor">
             <div class="inicio">
-                <h1><span class="inicio__h1--growAmarillo">Grow</span> Burger Shop</h1>
+                <h1 class="wow animate__animated animate__fadeInDown"><span class="inicio__h1--growAmarillo">Grow</span> Burger Shop</h1>
 
                 <div class="inicio__subtitulo">
-                    <p>#<span class="inicio__subtitulo__p--letraAmarillo">B</span>urger</p>
-                    <p>#<span class="inicio__subtitulo__p--letraAmarillo">B</span>irra</p> 
-                    <p>#<span class="inicio__subtitulo__p--letraAmarillo">S</span>abemos <span class="inicio__subtitulo__p--letraAmarillo">L</span>o <span class="inicio__subtitulo__p--letraAmarillo">Q</span>ue <span class="inicio__subtitulo__p--letraAmarillo">H</span>acemos</p>
+                    <p class="wow animate__animated animate__fadeInLeft">#<span class="inicio__subtitulo__p--letraAmarillo">B</span>urger</p>
+                    <p class="wow animate__animated animate__fadeInRight">#<span class="inicio__subtitulo__p--letraAmarillo">B</span>irra</p> 
+                    <p class="wow animate__animated animate__fadeInUp">#<span class="inicio__subtitulo__p--letraAmarillo">S</span>abemos <span class="inicio__subtitulo__p--letraAmarillo">L</span>o <span class="inicio__subtitulo__p--letraAmarillo">Q</span>ue <span class="inicio__subtitulo__p--letraAmarillo">H</span>acemos</p>
                 </div>
             </div>
         </div>
@@ -73,7 +77,7 @@
 
     <footer>
         <div class="contenedor">
-            <div class="footer">
+            <div class="footer wow animate__animated animate__fadeIn">
                 <a href="index.html"><img src="img/Grow.jpg" alt="Grow Icon"></a>
                 <div class="footer__nav">
                     <ul class="footer__nav__ul">
@@ -94,6 +98,7 @@
 <!-- FOOTER -->
 
     <script src="https://kit.fontawesome.com/bf9ab30dbe.js" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
 
 </body>
 </html>
