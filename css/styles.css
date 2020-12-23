@@ -138,7 +138,7 @@ img {
   color: #FFFFFF;
   text-align: center;
   width: 50%;
-  margin: 3em auto;
+  margin: 3em auto 2em;
   letter-spacing: 0.2em;
   flex-direction: column;
 }

@@ -5,7 +5,7 @@
     color: $growColor3;
     text-align: center;
     width: 50%;
-    margin: 3em auto;
+    margin: 3em auto 2em;
     letter-spacing: 0.2em;
     flex-direction: column;
 
@@ -23,7 +23,7 @@
                 color: $growColor1;
             }
         }
-    }        
+    }       
 }
 
 @media (max-width: 1440px) {
