@@ -667,7 +667,7 @@ img {
   outline: 0;
 }
 @media (min-width: 768px) {
-  .contact-wrapper > * {
+  .contacto > * {
     padding: 2em;
   }
 }
